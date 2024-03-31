@@ -1,0 +1,2 @@
+# goCalc
+Calculator on Golang
