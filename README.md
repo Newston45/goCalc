@@ -34,5 +34,3 @@ go run main.go.
 ## License
 
 MIT
-
-**Free Software, Hell Yeah!**
