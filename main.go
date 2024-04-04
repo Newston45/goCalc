@@ -93,9 +93,11 @@ func findResult(Text string) string {
 	for _, op := range operators { // проходимся циклом по возможным операциям
 		if strings.Contains(Text, op) { // и проверяем есть ли в введной строке символ операции
 			operator = op // если нашли записываем оператор
+			if strings.Contains(Text, op) == false {
+				panic("нет оператора")
+			}
 			break
 		}
-		panic("нет опертора вычисления")
 	}
 
 	nums := strings.Split(Text, operator) // убираем оператор, получаем два числа из строки
