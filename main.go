@@ -83,7 +83,7 @@ func calculate(num1, num2 int, operator string) int {
 func findResult(Text string) string {
 	operators := []string{"+", "-", "/", "*"} // возможные арифметические операции
 
-	Text = strings.Trim(Text, "\n") // удаляем перенос строки из записанной строки
+	Text = strings.Trim(Text, "\r\n") // удаляем перенос строки из записанной строки
 	if Text == "exit" {
 		os.Exit(0)
 	}
